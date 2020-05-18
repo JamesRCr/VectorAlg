@@ -1,2 +1,2 @@
 # VectorAlg
-An ever expanding ecosytem of shitty vector, matrix, and geometric algebra.
+An ever expanding ecosytem of MacGyvered vector, matrix, and geometric algebra.
