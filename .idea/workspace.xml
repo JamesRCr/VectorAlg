@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="665456b8-7d23-4fd6-abee-4b070db3bfe6" name="Default Changelist" comment="" />
+    <list default="true" id="665456b8-7d23-4fd6-abee-4b070db3bfe6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +101,7 @@
       <workItem from="1589846736287" duration="2125000" />
       <workItem from="1589899203436" duration="1368000" />
       <workItem from="1589902786250" duration="601000" />
-      <workItem from="1589907714787" duration="1589000" />
+      <workItem from="1589907714787" duration="2090000" />
     </task>
     <task id="LOCAL-00001" summary="Separated main from vector class for future vector class usage.">
       <created>1589909340078</created>
@@ -108,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589909340078</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Separated main from vector class for future vector class usage.">
+      <created>1589909415441</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589909415441</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Example plot from starting vectors [(0,1), (1,0)]">
+      <created>1589909560386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589909560386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,17 +143,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Separated main from vector class for future vector class usage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Separated main from vector class for future vector class usage." />
+    <MESSAGE value="Example plot from starting vectors [(0,1), (1,0)]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Example plot from starting vectors [(0,1), (1,0)]" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="198" key="#Deployment" timestamp="1589909331950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="198" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1589909331950" />
-    <state x="523" y="134" key="CommitChangelistDialog2" timestamp="1589909339421">
+    <state x="523" y="134" key="CommitChangelistDialog2" timestamp="1589909559865">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="523" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909339421" />
+    <state x="523" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909559865" />
     <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1589908729367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -162,10 +179,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="971" y="186" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589908851879" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589909155820">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589909565353">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909155820" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909565353" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589909124927">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

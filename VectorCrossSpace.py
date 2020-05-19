@@ -47,9 +47,9 @@ def main(iterations, basis):
         n += 1
         logger.info(f"Iteration {n} finished: {len(space)} vectors in space")
 
-    olen = len(space)
+    old_len = len(space)
     space = list(set(space))
-    logger.info(f"Removed {olen-len(space)} redundant vectors")
+    logger.info(f"Removed {old_len-len(space)} redundant vectors")
     logger.info(f"Current vector count: {len(space)}")
     _plotter(space, 150, 'vecspace.png')
 
