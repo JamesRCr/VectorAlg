@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c3fOzo0SQVsRAqAzVoInolrYLu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,9 +27,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.VectorCrossSpace">
     <configuration name="Vector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Vectors" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -49,8 +53,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="VectorCrossSpace" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Vectors" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VectorCrossSpace.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.VectorCrossSpace" />
         <item itemvalue="Python.Vector" />
       </list>
     </recent_temporary>
@@ -71,31 +98,65 @@
       <workItem from="1589843655755" duration="2597000" />
       <workItem from="1589846736287" duration="2125000" />
       <workItem from="1589899203436" duration="1368000" />
+      <workItem from="1589902786250" duration="601000" />
+      <workItem from="1589907714787" duration="1318000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1879" height="294" key="GridCell.Tab.0.bottom" timestamp="1589900573756">
+    <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1589908729367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589900573756" />
-    <state width="1879" height="294" key="GridCell.Tab.0.center" timestamp="1589900573756">
+    <state x="1220" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1589908729367" />
+    <state width="1879" height="294" key="GridCell.Tab.0.bottom" timestamp="1589909255671">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589900573756" />
-    <state width="1879" height="294" key="GridCell.Tab.0.left" timestamp="1589900573756">
+    <state width="1879" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1589909255671" />
+    <state width="1879" height="294" key="GridCell.Tab.0.center" timestamp="1589909255671">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589900573756" />
-    <state width="1879" height="294" key="GridCell.Tab.0.right" timestamp="1589900573756">
+    <state width="1879" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1589909255671" />
+    <state width="1879" height="294" key="GridCell.Tab.0.left" timestamp="1589909255671">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589900573756" />
+    <state width="1879" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1589909255671" />
+    <state width="1879" height="294" key="GridCell.Tab.0.right" timestamp="1589909255671">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1879" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1589909255671" />
+    <state x="971" y="186" key="SettingsEditor" timestamp="1589908851879">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="971" y="186" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589908851879" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589909155820">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909155820" />
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589909124927">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1589909124927" />
+    <state x="728" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589909131182">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="728" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909131182" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/VectorAlg$VectorCrossSpace.coverage" NAME="VectorCrossSpace Coverage Results" MODIFIED="1589909228764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Vectors$Vector.coverage" NAME="Vector Coverage Results" MODIFIED="1589900473214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
