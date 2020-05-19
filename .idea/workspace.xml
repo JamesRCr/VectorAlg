@@ -99,8 +99,16 @@
       <workItem from="1589846736287" duration="2125000" />
       <workItem from="1589899203436" duration="1368000" />
       <workItem from="1589902786250" duration="601000" />
-      <workItem from="1589907714787" duration="1318000" />
+      <workItem from="1589907714787" duration="1589000" />
     </task>
+    <task id="LOCAL-00001" summary="Separated main from vector class for future vector class usage.">
+      <created>1589909340078</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589909340078</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +125,19 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Separated main from vector class for future vector class usage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated main from vector class for future vector class usage." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="551" y="198" key="#Deployment" timestamp="1589909331950">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="551" y="198" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1589909331950" />
+    <state x="523" y="134" key="CommitChangelistDialog2" timestamp="1589909339421">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="523" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589909339421" />
     <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1589908729367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
