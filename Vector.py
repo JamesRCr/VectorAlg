@@ -125,6 +125,3 @@ class Vector:
             return (self[0] * other[1]) - (other[0] * self[1])
         else:
             raise NotImplementedError
-
-
-
