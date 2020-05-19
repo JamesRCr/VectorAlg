@@ -1,4 +1,5 @@
 import operator
+import itertools
 
 
 class Vector:
@@ -112,7 +113,7 @@ class Vector:
 def _plotter(space):
     """ Helper function to plot stuff """
     import matplotlib.pyplot as plt
-    plt.scatter([v[0] for v in space], [v[1] for v in space])
+    plt.scatter([v[0] for v in space], [v[1] for v in space], s=2)
     plt.plot(0, 0, 'ok')
     plt.grid(b=True, which='major')
     plt.xlim(-1, 1)
@@ -123,30 +124,26 @@ def _plotter(space):
 def main(iterations, basis):
     """
     Basically iterates through each permutation of the space to create vectors using the mod product
-    :param iterations: Number of vectors to make
+    :param iterations: Number of iterations to run (BE CAREFUL!!!! STAY WITHIN 1-4)
     :param basis: Starting vector(s)
     """
     space = basis
-    index1, index2 = 0, 1
-    temp = []
-    while len(space) < iterations**2:
-        c1, c2 = space[index1] % space[index2], space[index2] % space[index1]
-        temp.extend([c1, c2])
-        if index1 == len(space) - 2:
-            index1, index2 = 0, 1
-            space.extend(temp)
-            temp.clear()
-        elif index2 == len(space) - 1:
-            index1 += 1
-            index2 = index1 + 1
-        else:
-            index2 += 1
-    space = list(set(space))  # Uniqueness
-    space = [v for v in space if len(v) == 2]  # Fixes any errors
-    for v in space:
-        print(v)
+    n = 0
+    while n < iterations:
+        temp = []
+        for vec1, vec2 in itertools.combinations_with_replacement(space, 2):
+            c1, c2 = vec1 % vec2, vec2 % vec1
+            temp.extend([c1, c2])
+        space.extend([v for v in temp if v not in space])
+        temp.clear()
+        n += 1
+
+    space = list(set(space))
+
+    print(len(space))
     _plotter(space)
 
 
 if __name__ == '__main__':
-    main(10, [Vector([1, 0]), Vector([0, 1])])
+    for i in range(1, 6):
+        main(i, [Vector([1, 0]), Vector([0, 1])])
