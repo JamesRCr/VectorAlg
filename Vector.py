@@ -1,5 +1,15 @@
+import matplotlib.pyplot as plt
 import operator
 import itertools
+import logging
+
+logging.basicConfig(
+    format="%(asctime)s [%(levelname)s] %(funcName)s: %(message)s",
+    datefmt='%m/%d/%Y %I:%M:%S %p',
+    level=logging.INFO
+    )
+
+logger = logging.getLogger(__name__)
 
 
 class Vector:
@@ -58,11 +68,16 @@ class Vector:
         """ Makes Vector unique """
         return hash(repr(self))
 
+    def __abs__(self):
+        """ Returns magnitude of vector"""
+        return (sum([i**2 for i in self._comp]))**0.5
+
     def _operator(self, other, comparator):
         """ Helper function to reduce code in operations """
         if len(self) == len(other):
             return Vector([comparator(x, y) for x, y in zip(self, other)])
         else:
+            logger.error(f"self and other have unequal length")
             raise IndexError
 
     def __eq__(self, other):
@@ -96,7 +111,7 @@ class Vector:
             Basically 2D cross product
         """
         try:
-            return (self + other) * ((self ^ other) / ((self[0] + other[0]) ** 2 + (self[1] + other[1]) ** 2) ** 0.5)
+            return (self + other) * ((self ^ other) / (abs(self + other)))
         except ZeroDivisionError:
             return self
 
@@ -110,15 +125,18 @@ class Vector:
             raise NotImplementedError
 
 
-def _plotter(space):
+def _plotter(space, dpi, name):
     """ Helper function to plot stuff """
-    import matplotlib.pyplot as plt
-    plt.scatter([v[0] for v in space], [v[1] for v in space], s=2)
-    plt.plot(0, 0, 'ok')
+    logger.info("Plotting image")
+    plt.rcParams['axes.axisbelow'] = True
+    plt.figure(dpi=dpi)
+    plt.scatter([v[0] for v in space], [v[1] for v in space], s=(72./dpi)**2, marker='.')
+    plt.plot(0, 0, 'ok', markersize=1)
     plt.grid(b=True, which='major')
-    plt.xlim(-1, 1)
-    plt.ylim(-1, 1)
-    plt.show()
+    plt.xlim(-1.1, 1.1)
+    plt.ylim(-1.1, 1.1)
+    plt.savefig(name)
+    logger.info(f"Saved image at {name}")
 
 
 def main(iterations, basis):
@@ -134,16 +152,17 @@ def main(iterations, basis):
         for vec1, vec2 in itertools.combinations_with_replacement(space, 2):
             c1, c2 = vec1 % vec2, vec2 % vec1
             temp.extend([c1, c2])
-        space.extend([v for v in temp if v not in space])
+        space.extend([v for v in temp if v not in space and len(v) == 2])
         temp.clear()
         n += 1
+        logger.info(f"Iteration {n} finished: {len(space)} vectors in space")
 
+    olen = len(space)
     space = list(set(space))
-
-    print(len(space))
-    _plotter(space)
+    logger.info(f"Removed {olen-len(space)} redundant vectors")
+    logger.info(f"Current vector count: {len(space)}")
+    _plotter(space, 150, 'vecspace.png')
 
 
 if __name__ == '__main__':
-    for i in range(1, 6):
-        main(i, [Vector([1, 0]), Vector([0, 1])])
+    main(4, [Vector([1, 0]), Vector([0, 1])])
