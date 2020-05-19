@@ -1,6 +1,4 @@
-import matplotlib.pyplot as plt
 import operator
-import itertools
 import logging
 
 
