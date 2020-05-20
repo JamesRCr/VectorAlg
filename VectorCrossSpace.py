@@ -57,4 +57,4 @@ def main(iterations, basis):
 
 
 if __name__ == '__main__':
-    main(5, [Vector([1, 0]), Vector([0, 1])])
+    main(4, [Vector([1, 0]), Vector([0, 1])])

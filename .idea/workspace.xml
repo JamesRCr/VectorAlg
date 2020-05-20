@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="665456b8-7d23-4fd6-abee-4b070db3bfe6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vector.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VectorCrossSpace.py" beforeDir="false" afterPath="$PROJECT_DIR$/VectorCrossSpace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vecspace.png" beforeDir="false" afterPath="$PROJECT_DIR$/vecspace.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +107,7 @@
       <workItem from="1589937836634" duration="618000" />
       <workItem from="1590006554474" duration="2737000" />
       <workItem from="1590009504750" duration="28000" />
-      <workItem from="1590009581334" duration="4946000" />
+      <workItem from="1590009581334" duration="5023000" />
     </task>
     <task id="LOCAL-00001" summary="Separated main from vector class for future vector class usage.">
       <created>1589909340078</created>
@@ -153,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589924438848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Optimized and cleaned up vector class and program">
+      <created>1590014565441</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590014565441</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,45 +183,46 @@
     <MESSAGE value="Renamed olen to old_len" />
     <MESSAGE value="Removed whitespace" />
     <MESSAGE value="Removed unused imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused imports" />
+    <MESSAGE value="Optimized and cleaned up vector class and program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized and cleaned up vector class and program" />
   </component>
   <component name="WindowStateProjectService">
     <state x="551" y="198" key="#Deployment" timestamp="1589909331950">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="551" y="198" key="#Deployment/0.0.1920.1080@0.0.1920.1080" timestamp="1589909331950" />
-    <state x="523" y="134" key="CommitChangelistDialog2" timestamp="1589924437899">
+    <state x="686" y="127" key="CommitChangelistDialog2" timestamp="1590014564841">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="523" y="134" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1589924437899" />
+    <state x="686" y="127" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1590014564841" />
     <state x="1220" y="298" key="FileChooserDialogImpl" timestamp="1589908729367">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1220" y="298" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1589908729367" />
-    <state width="1879" height="294" key="GridCell.Tab.0.bottom" timestamp="1590014508839">
+    <state width="1879" height="294" key="GridCell.Tab.0.bottom" timestamp="1590014567909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590014508839" />
-    <state width="1879" height="294" key="GridCell.Tab.0.center" timestamp="1590014508839">
+    <state width="1879" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1590014567909" />
+    <state width="1879" height="294" key="GridCell.Tab.0.center" timestamp="1590014567909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590014508839" />
-    <state width="1879" height="294" key="GridCell.Tab.0.left" timestamp="1590014508839">
+    <state width="1879" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1590014567909" />
+    <state width="1879" height="294" key="GridCell.Tab.0.left" timestamp="1590014567909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590014508839" />
-    <state width="1879" height="294" key="GridCell.Tab.0.right" timestamp="1590014508839">
+    <state width="1879" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1590014567909" />
+    <state width="1879" height="294" key="GridCell.Tab.0.right" timestamp="1590014567909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1879" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590014508839" />
+    <state width="1879" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1590014567909" />
     <state x="971" y="186" key="SettingsEditor" timestamp="1589908851879">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="971" y="186" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1589908851879" />
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1589924460967">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1590014572416">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1589924460967" />
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1590014572416" />
     <state x="92" y="92" width="1736" height="896" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589910201665">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
