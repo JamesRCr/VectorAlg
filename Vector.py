@@ -27,6 +27,9 @@ class Vector:
     def __init__(self, components):
         self._comp = components
 
+    def get_comp(self):
+        return self._comp
+
     def __len__(self):
         """ Number of components in vector """
         return len(self._comp)
@@ -47,7 +50,7 @@ class Vector:
 
     def __getitem__(self, item):
         """ Allows component at index """
-        return self._comp[item]
+        return self.get_comp()[item]
 
     def __setitem__(self, key, value):
         """ Allows setting component at index """
@@ -58,11 +61,11 @@ class Vector:
 
     def __str__(self):
         """ Pretty print """
-        return str(self._comp)
+        return str(self.get_comp())
 
     def __repr__(self):
         """ Useful print """
-        return str(self._comp)
+        return str(self.get_comp())
 
     def __hash__(self):
         """ Makes Vector unique """
@@ -70,19 +73,27 @@ class Vector:
 
     def __abs__(self):
         """ Returns magnitude of vector"""
-        return (sum([i**2 for i in self._comp]))**0.5
+        return (sum([i**2 for i in self.get_comp()]))**0.5
 
     def _operator(self, other, comparator):
         """ Helper function to reduce code in operations """
         if len(self) == len(other):
-            return Vector([comparator(x, y) for x, y in zip(self, other)])
+            return Vector([comparator(x, y) for x, y in zip(self.get_comp(), other.get_comp())])
         else:
             logger.error(f"self and other have unequal length")
             raise IndexError
 
     def __eq__(self, other):
         """ Equality """
-        return all([x == y for x, y in zip(self, other)])
+        if isinstance(other, Vector):
+            return all([x == y for x, y in zip(self.get_comp(), other.get_comp())])
+        elif isinstance(other, list):
+            return all([x == y for x, y in zip(self.get_comp(), other)])
+        else:
+            return False
+
+    def __neg__(self):
+        return Vector([-x for x in self.get_comp()])
 
     def __add__(self, other):
         """ Addition """
@@ -97,9 +108,9 @@ class Vector:
         if isinstance(other, Vector):
             return self._operator(other, operator.mul)
         elif isinstance(other, int):
-            return Vector(list(map(lambda x: x * other, self)))
+            return Vector(list(map(lambda x: x * other, self.get_comp())))
         elif isinstance(other, float):
-            return Vector(list(map(lambda x: x * other, self)))
+            return Vector(list(map(lambda x: x * other, self.get_comp())))
 
     def __truediv__(self, other):
         """ Component by component division """
